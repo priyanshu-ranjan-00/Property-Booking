@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply custom font family globally */
+body {
+  @apply font-custom;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  @apply w-full border my-1 py-2 px-3 rounded-2xl;
+}
+textarea {
+  height: 100px;
+}
+button {
+  @apply bg-gray-300;
+}
+button.primary {
+  background-color: #f5385d;
+  @apply bg-primary p-2 w-full text-white rounded-2xl;
+}
+
+/* For scrollbar to look cool */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* ::-webkit-scrollbar-track {
+  background-color: #1e1e1e;
+} */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+/* ::-webkit-scrollbar-thumb {
+  background-color: #555;
+} */
